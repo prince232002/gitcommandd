@@ -14,7 +14,8 @@ now copy the full ssh key and add to github
 tail <path to id_rsa.pub> #Add this key to your Github account
 9. git remote add origin <ssh url.git>
 10.git push origin master
-
+11.git pull origin master
+( for pulling from github to system )
 note--
 1 and 2 step are neccessary for github repo making 
 gitignore used to ignore modules files to save time from uploading large files to github eg. 

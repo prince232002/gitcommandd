@@ -1,10 +1,23 @@
-git config --global user.name Harry
-git config --global user.email youremail@example.com
-git init 
-git add .
-git commit -m "Initial Commit"
-git status #Just to see 
-ssh-keygen -t rsa -b 4096 -C "yuor-email@example.com"
+1. git config --global user.name Harry
+2. git config --global user.email youremail@example.com
+3. git init 
+4. git add .
+5. git commit -m "Initial Commit"
+6. git status #Just to see 
+   git remote add origin git@ssh_path  #if there is no private repo then only 
+7. ssh-keygen -t rsa -b 4096 -C "your-email@example.com"
+ press enter enter
+ copy the path of ssh key and write 
+8. cat [paste the path]
+now copy the full ssh key and add to github 
+                      or 
 tail <path to id_rsa.pub> #Add this key to your Github account
-git remote add origin <ssh url.git>
-git push origin master
+9. git remote add origin <ssh url.git>
+10.git push origin master
+
+note--
+1 and 2 step are neccessary for github repo making 
+gitignore used to ignore modules files to save time from uploading large files to github eg. 
+node_modules/
+which can be created easily using npm -install and its a big size file so we can create it manually rather
+than to upload to github
